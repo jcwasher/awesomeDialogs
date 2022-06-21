@@ -3,6 +3,7 @@ description: >-
   Flutter package to show beautiful dialogs(INFO,QUESTION,WARNING,SUCCESS,ERROR) with animations as simply as possible.
 version: 2.2.1
 homepage: https://github.com/marcos930807/awesomeDialogs
+publish_to: none
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
@@ -11,7 +12,11 @@ dependencies:
   flutter:
     sdk: flutter
   simple_animations: ^4.0.1
-  flare_flutter: ^3.0.2
+  flare_flutter: # 3.0.2
+    git:
+      url: https://github.com/tsinis/Flare-Flutter.git
+      path: flare_flutter/
+      ref: e90219f457602c61afee0b5f6cec2d66bd395e01 
 
 dev_dependencies:
   flutter_test:
